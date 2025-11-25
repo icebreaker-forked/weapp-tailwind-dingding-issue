@@ -3,9 +3,9 @@ import { icebreaker } from '@icebreakers/eslint-config'
 export default icebreaker(
   {
     vue: true,
-    tailwindcss: {
-      tailwindConfig: './tailwind.config.ts',
-    },
+    // tailwindcss: {
+    //   tailwindConfig: './tailwind.config.ts',
+    // },
     weapp: true,
 
   },

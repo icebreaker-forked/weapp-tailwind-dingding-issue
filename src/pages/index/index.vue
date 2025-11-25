@@ -57,10 +57,23 @@ function copy(data: string) {
     data,
   })
 }
+
+const item: any[] = []
 </script>
 
 <template>
   <view class="content">
+    <view class="swiper-item">
+      <view
+        v-for="(swiperItem, swiperIndex) in item"
+        :key="swiperIndex"
+        class="flex items-center py-[13px]"
+        :class="swiperIndex === item.length - 1 ? 'border-0' : `
+                        border-0 border-b-[1px] border-solid
+                        border-b-[rgba(0,0,0,0.1)]
+                      `"
+      />
+    </view>
     <WeappTailwindcss />
     <view class="my-3 w-full border-t border-solid border-gray-200" />
     <view class="text-xl text-gray-600/95">
